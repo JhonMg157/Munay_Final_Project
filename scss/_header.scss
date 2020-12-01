@@ -1,0 +1,24 @@
+header{
+    background-color: rgba(6, 30, 61, 0.534);
+}
+nav{
+    ul{
+        list-style: none;
+        overflow: hidden;
+        li{
+            float: left;
+            a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 15px 20px;
+                color: #000;
+                &:hover{
+                    background: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+    
+}

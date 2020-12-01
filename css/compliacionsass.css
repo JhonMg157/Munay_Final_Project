@@ -1,0 +1,91 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: url(../Imágenes/sunset-4771948_1920.jpg); }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  overflow: hidden; }
+
+header {
+  background-color: rgba(6, 30, 61, 0.534); }
+
+nav ul {
+  list-style: none;
+  overflow: hidden; }
+  nav ul li {
+    float: left; }
+    nav ul li a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 15px 20px;
+      color: #000; }
+      nav ul li a:hover {
+        background: #000;
+        color: #fff; }
+
+.main {
+  width: 70%;
+  float: left;
+  background: rgba(0, 0, 0, 0.514); }
+
+.imagen {
+  width: 100%; }
+  .imagen img {
+    vertical-align: top;
+    width: 100%;
+    height: 485.5px; }
+  .imagen .posts {
+    padding: 40px; }
+
+article h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center; }
+
+article p {
+  color: #acacac;
+  margin-bottom: 25px;
+  line-height: 27px; }
+
+aside {
+  width: 30%;
+  float: left;
+  background: #161f26;
+  color: #fff;
+  padding: 20px; }
+
+.widget {
+  margin-bottom: 20px;
+  color: #ff8000;
+  border-bottom: 1px solid #ff8000;
+  margin-bottom: 10px; }
+  .widget ul {
+    list-style: none; }
+    .widget ul li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.274);
+      padding: 10px 0; }
+      .widget ul li a {
+        color: white;
+        text-decoration: none; }
+        .widget ul li a:hover {
+          color: #8f8f8f; }
+  .widget p {
+    line-height: 27px;
+    color: white; }
+
+footer {
+  width: 70%;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  background: black;
+  padding: 20px 0; }

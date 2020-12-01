@@ -1,0 +1,85 @@
+$color-red: rgb(116, 10, 10);
+$name: foo;
+$attr: border;
+
+
+:root{
+    --wrapperspace: 1.5em
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    font-size: 18px;
+    color:$color-red;
+    
+}
+p.#{$name} {
+    #{$attr}-color: blue;
+  }
+.hero{
+    
+    text-align: center;
+    .copy{
+        margin-bottom: 3em;
+    }
+   &__image{
+       height: 300px;
+       background-image: url(../Imágenes/Colibrieacua.jpg);
+       background-size: 400px, cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       margin: 0 calc(-1 * var(--wrapperspace));
+       margin-top: 2em;
+       
+   }
+}
+@mixin color-boton($height, $width) {
+    @if(($height < $width) and ($width >= 45px)) {
+         background-color: red;
+    } @else {
+         background-color: blue;
+    }       
+}
+.button{
+    padding: .9em 2em;
+    font-size: 1em;
+    color: white;
+    border-radius: 1.9em;
+    @include color-boton(30px, 40px);
+    border: 1px solid rgb(49, 13, 13)(51, 15, 15);
+    }
+    
+.wrapper{
+    padding: 0 2em;
+}
+.title{
+    &__h1{
+        font-size: 2.1em;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+    }
+}   
+.copy{
+    line-height: 1.7em;
+}
+.hero2{
+    text-align: center;
+}
+
+@function numero($num: 500px){
+    @return  $num/2;
+  }
+  
+  .uno {
+    width: numero();
+    background-color: orange;
+    text-align: center;
+  }
+  
+  .dos {
+    width: numero(600px);
+    background-color: aqua;
+    text-align: center;
+  }
+
